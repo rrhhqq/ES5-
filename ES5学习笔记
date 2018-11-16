@@ -1,0 +1,38 @@
+一.js的简介
+1.1 JavaScript简史
+   1995，布兰登。艾奇开发Netscape Navigator 2的LiveScript. 改名JavaScript。
+   1997年JavaScript 1.1。 微软在IE3中加入JScript。ECMA-262----ECMAScript。
+   js 2:编辑加工的结果。没增删改。
+   js 3:成为真正的编程语言
+   js 4:全面修订。完全定义了一门新语言。跨域太大，没发布就放弃。
+   js 5:2009,
+   es6:2015。
+1.2 DOM
+   DOM:针对XML经过扩展用于html的应用程序编程接口。
+   W3C制定标准规划DOM。
+   DOM1:两个模块DOM核心和DOM HTML。核心规定如何映射基于XML的文档结构，简化访问和        操作。DOM HTML则扩展并添加了对HTML的对象和方法。
+   DOM2:引入了了新模块和新类型以及新接口。视图接口，事件和事件处理接口，样式接口       ，遍历和操作文档树的接口。
+   DOM3：引入了统一加载和保存文档的方法，新增了验证文档的方法。核心扩展，开始支持        xml1.0规范。
+
+二.js如何在html中使用
+   <script>:async立即下载脚本，单不应妨碍页面的其它操作。
+            charset指定脚本代码的字符集。
+            defer表示延迟到文档完全被解释和显示之后再执行，只对外部文件有效。
+            language表示编写代码的脚本语言。
+            src表示要执行代码的外部文件。
+            type表示脚本语言的内容类型，language的替代属性。
+  2.1在xhtml中需要更严格，用html实体代替代码不好理解，用CDate片段，不支持CData就     注释一下。
+  2.4<noscript>元素
+
+三.基本概念
+   3.1区分大小写；标识符驼峰：第一个字母小写，剩下每个词首字母大写；
+      函数体内用严格模式"use strict"执行结果大不同，不确定行为得到处理，不安全操    作也会抛出错误。
+    3.2关键字和保留字
+    3.3变量
+    3.4五种简单数据类型 Underfined,Null,Boolean,Number,String和复杂类型Object
+    typeof操作符
+    Underfined和Null都只有一个值，Boolean只有两个值true和false,Number的八进制前有     0，十六进制前以后0x,浮点数据的最高精度是17位小数。NaN不与任何值相等，有           isNaN()函数。
+    数值转换：Number()，parseInt(),parseFloat()。
+    st。ring值不能变。toString()函数
+    Object，构造函数constructor(),
+    
