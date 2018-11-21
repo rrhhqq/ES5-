@@ -1,4 +1,4 @@
-一.js的简介
+第1章.js的简介
 1.1 JavaScript简史
    1995，布兰登。艾奇开发Netscape Navigator 2的LiveScript. 改名JavaScript。
    1997年JavaScript 1.1。 微软在IE3中加入JScript。ECMA-262----ECMAScript。
@@ -14,7 +14,7 @@
    DOM2:引入了了新模块和新类型以及新接口。视图接口，事件和事件处理接口，样式接口       ，遍历和操作文档树的接口。
    DOM3：引入了统一加载和保存文档的方法，新增了验证文档的方法。核心扩展，开始支持        xml1.0规范。
 
-二.js如何在html中使用
+第2章.js如何在html中使用
    <script>:async立即下载脚本，单不应妨碍页面的其它操作。
             charset指定脚本代码的字符集。
             defer表示延迟到文档完全被解释和显示之后再执行，只对外部文件有效。
@@ -24,7 +24,7 @@
   2.1在xhtml中需要更严格，用html实体代替代码不好理解，用CDate片段，不支持CData就     注释一下。
   2.4<noscript>元素
 
-三.基本概念
+第3章.基本概念
    3.1区分大小写；标识符驼峰：第一个字母小写，剩下每个词首字母大写；
       函数体内用严格模式"use strict"执行结果大不同，不确定行为得到处理，不安全操    作也会抛出错误。
     3.2关键字和保留字
@@ -34,5 +34,23 @@
     Underfined和Null都只有一个值，Boolean只有两个值true和false,Number的八进制前有     0，十六进制前以后0x,浮点数据的最高精度是17位小数。NaN不与任何值相等，有           isNaN()函数。
     数值转换：Number()，parseInt(),parseFloat()。
     st。ring值不能变。toString()函数
-    Object，构造函数constructor(),
+    Object，构造函数constructor(),hasOwnProperty(propertyName),isPrototypeOf    (object),propertyIsEnumerable(proppertyName),toLocalString(),toString(),
+    valueOf().
+    3.5
+     一元操作符，位操作符。负数的存储用二进制补码，绝对值，反码，加1。
+     按位非~：操作数的负数减1；
+     按位与&；按位或|，按位异或^；左移<<不影响符号位,有符号右移>>保留符号位，无符     号右移>>>对于负数有影响，因为是以0填充空位。
+     逻辑非!,逻辑与&&，逻辑或||，
+     乘法*，求模（余数）%，除法/，关系操作符。条件操作符，赋值操作符，逗号操作符
+    3.6
+     if语句，do-while语句,while语句，for语句，for-in语句美剧对象的属性。label语句     给代码段添加标签，以便将来使用。switch语句跟其它语言限定数值不同，数据类型多样。
+     break跳出循环，continue执行跳出后的语句继续循环。   
+     with语句讲代码作用域设置到一个特定的对象中。
+     3.7函数
+      函数参数对象与数组类似，不强制显式命名参数。函数没有重载，会覆盖。
+
+第4章 变量 作用域和内存问题
+     
+     引用类型的值按索引访问，添加属性操作的确实对象本身。
+
     
