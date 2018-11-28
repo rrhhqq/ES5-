@@ -60,3 +60,44 @@
     引用计数垃圾收集策略有循环引用的问题，可以设置为null来避免。
     解除引用：数据不再有用，设置为null。
     
+第5章 引用类型
+   
+  5.1 Object类型可以通过new操作符和object构造函数一起来创建实例，还可以通过对象字面量来表示。多采用字面量模式。
+    访问对象属性使用点表示法，也可以用方括号法，方括号法可以通过变量来访问属性。比如属性中使用关键字或保留字或空格。
+  5.2 Array类型 数组的每一项可以保存任何类型的数据。数组大小动态调整。构造函数法和字面量法。
+    检测数组:用instanceof，适应于一个全局执行环境，增加了Array.isArray()。 
+    数组转换方法：所有对象都有toLocalString(),toString()和valueOf()方法。
+    数组栈方法：push(),pop()；队列方法shift(),unshift()。
+    数组重排列方法:reverse()倒序，sort()从小到大排列比较字符串。
+    数组操作方法:ocncat()基于当前数组中所有项创建一个新数组。slice(index,index)截     取数组内容生成新数组。
+    splice()可以实现删除，插入，替换功能。
+    数组位置方法：indexOf()和lastIndexOf()。
+    迭代方法：every()对数组的每一项运行给定函数。filter()对每一项运行给定函数。
+    forEach()对每一项运行给定函数，没有返回值。map()对每一项运行给定函数，返回每    次函数结果组成的数组。some()对数组每一项运行给定函数，有一项为真则返回真。
+    归并方法：reduce()和reduceRight()。
+  5.3 Date类型。
+  5.4 ReExp类型
+    匹配模式支持标志：g,i,m。模式中的元字符都必须转义,包括( [{\^$|)?*+.]}
+    实例属性：global,ignoreCase,lastIndex,multiline，source。
+    exec()方法接受一个参数，即要应用模式的字符串。
+    从exect()或test()操作者可以提出构造函数的属性input,lastMatch,lastParen
+    leftContext,multiline,rightContext。
+  5.5 Function类型
+    函数是对象。函数没有重载。函数声明提升。callee属性指向拥有arguments对象的函数。
+    函数对象属性caller保存着调用当前函数的函数的引用。严格模式下访问callee和赋值caller会出错。
+    函数对象的属性：length和prototype。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
