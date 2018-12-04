@@ -21,7 +21,7 @@
             language表示编写代码的脚本语言。
             src表示要执行代码的外部文件。
             type表示脚本语言的内容类型，language的替代属性。
-  2.1在xhtml中需要更严格，用html实体代替代码不好理解，用CDate片段，不支持CData就     注释一下。
+  2.1在xhtml中需要更严格，用html实体代替代码不好理解，用CDate片段，不支持CData就注释一下。
   2.4<noscript>元素
 
 第3章.基本概念
@@ -31,7 +31,7 @@
     3.3变量
     3.4五种简单数据类型 Underfined,Null,Boolean,Number,String和复杂类型Object
     typeof操作符
-    Underfined和Null都只有一个值，Boolean只有两个值true和false,Number的八进制前有 0，十六进制前以后0x,浮点数据的最高精度是17位小数。NaN不与任何值相等，有           isNaN()函数。
+    Underfined和Null都只有一个值，Boolean只有两个值true和false,Number的八进制前有 0，十六进制前以后0x,浮点数据的最高精度是17位小数。NaN不与任何值相等，有isNaN()函数。
     数值转换：Number()，parseInt(),parseFloat()。
     st。ring值不能变。toString()函数
     Object，构造函数constructor(),hasOwnProperty(propertyName),isPrototypeOf(object),propertyIsEnumerable(proppertyName),toLocalString(),toString(),
@@ -69,11 +69,11 @@
     数组转换方法：所有对象都有toLocalString(),toString()和valueOf()方法。
     数组栈方法：push(),pop()；队列方法shift(),unshift()。
     数组重排列方法:reverse()倒序，sort()从小到大排列比较字符串。
-    数组操作方法:ocncat()基于当前数组中所有项创建一个新数组。slice(index,index)截     取数组内容生成新数组。
+    数组操作方法:ocncat()基于当前数组中所有项创建一个新数组。slice(index,index)截取数组内容生成新数组。
     splice()可以实现删除，插入，替换功能。
     数组位置方法：indexOf()和lastIndexOf()。
     迭代方法：every()对数组的每一项运行给定函数。filter()对每一项运行给定函数。
-    forEach()对每一项运行给定函数，没有返回值。map()对每一项运行给定函数，返回每    次函数结果组成的数组。some()对数组每一项运行给定函数，有一项为真则返回真。
+    forEach()对每一项运行给定函数，没有返回值。map()对每一项运行给定函数，返回每次函数结果组成的数组。some()对数组每一项运行给定函数，有一项为真则返回真。
     归并方法：reduce()和reduceRight()。
   5.3 Date类型。
   5.4 ReExp类型
