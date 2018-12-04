@@ -87,6 +87,42 @@
     函数对象属性caller保存着调用当前函数的函数的引用。严格模式下访问callee和赋值caller会出错。
     函数对象的属性：length和prototype。
 
+    函数对象的属性：length表示函数希望接收的命名参数的个数和prototype
+。
+    使用call()或者apply()扩充作用域，对象不需要与方法有任何耦合关系。
+    bind()函数创建函数实例，其this值会被绑定传到bind()函数的值。
+    toFixed()方法按照指定小数位返回数值的字符串表示。
+    toExponential()返回指数表示法。
+    5.6 String类型
+     字符方法charAt()和charCodeAt()操作方法：concat()用于将一个或多个
+字符串拼接起   来得到新的字符串。slice(),substr(),substring()返回操作
+字符串的一个子字符串，对    本身字符串没影响。
+    位置方法： indexOf(),lastIndexOf()搜索给定的子字符串。trim()方法
+去除前置和后缀的所有空格。trimLeft()和trimRight()。
+    大小写转换：toLowerCase()，toUpperCase,toLocaleLowerCase
+(),toLocaleUpperCase()。
+   匹配方法：match()和search()，跟RegExp的exec()方法相同。replace()替
+代子字符串,split()基于指定的分隔符分割成多个子字符串。比较方法
+localeCompare()。fromCharCode()
+  5.7 Global对象
+  URI编码方法：encodeURI()和encodeURIComponent(),  用特殊的utf-8编码
+替换所有无效的字符。后者对某一段会使用对应编码替换所有非字母数字字符
+，前者主要用于整个uri。对应两个方法decodeURI()和encodeURIComponent()
+。
+   eval()方法最强大。
+   对象属性：所有原生引用类型的构造函数，undefined,NaN,Infinity。
+   window对象：通过它来访问global。
+   Math对象各种数学处理方法。
+
+
+
+
+
+
+
+
+
+
 
 
 
