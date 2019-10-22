@@ -69,7 +69,7 @@
     数组转换方法：所有对象都有toLocalString(),toString()和valueOf()方法。
     数组栈方法：push(),pop()；队列方法shift(),unshift()。
     数组重排列方法:reverse()倒序，sort()从小到大排列比较字符串。
-    数组操作方法:ocncat()基于当前数组中所有项创建一个新数组。slice(index,index)截取数组内容生成新数组。
+    数组操作方法:concat()基于当前数组中所有项创建一个新数组。slice(index,index)截取数组内容生成新数组。
     splice()可以实现删除，插入，替换功能。
     数组位置方法：indexOf()和lastIndexOf()。
     迭代方法：every()对数组的每一项运行给定函数。filter()对每一项运行给定函数。
