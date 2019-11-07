@@ -132,7 +132,7 @@ localeCompare()。fromCharCode()
        原型对象isPrototypeOf()确定对象间是否存在某种关系，Object.getPrototypeOf()返回对象。
        重新添加和原型对象中重名的属性，会屏蔽原型对象中的对象，除非用delete删除，才能重新链接上。
        使用hasOwnPropety()方法可以检测一个属性是存在于实例中还是存在于原型中。
-       取得对象上所有可枚举的实例属性可以用Object.kesy(obj)。
+       取得对象上所有可枚举的实例属性可以用Object.keys(obj)。
        得到所有实例属性，用Object.getOwnPropertyNames()。
        更简单的原型语法：用有一个包含所有属性和方法的对象字面量来重写整个原型对象。construtor指向会改变。重写原型对象切断了现有原型与任何之前已经存在的对象实例之间的联系，它引用的仍然是最初的原型对象。
        原型对象的问题，原型中所有属性都被许多实例共享，改变了就影响其它实例。
