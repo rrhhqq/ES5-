@@ -169,7 +169,27 @@
       有权访问私有变量和私有函数的公有方法称为特权方法。通过在私有作用域中定义私有变量或函数，同样也可以创建特权方法。
       模块模式（module pattern）则是为单例创建私有变量和特权方法。
 第八章 BOM 
+    8.1window 对象
       在浏览器中，window 对象有双重角色，它既是通过 JavaScript 访问浏览器窗口的一个接口，又是 ECMAScript 规定的 Global 对象。
       如果页面中包含框架，则每个框架都拥有自己的 window 对象，并且保存在 frames 集合中。
-
+      IE、Safari、Opera 和 Chrome 都提供了screenLeft 和 screenTop 属性，分别用于表示窗口相对于屏幕左边和上边的位置。
+      Firefox 则在screenX 和 screenY 属性中提供相同的窗口位置信息，Safari 和 Chrome 也同时支持这两个属性。
+      Opera虽然也支持 screenX 和 screenY 属性，但与 screenLeft 和 screenTop 属性并不对应，因此建议大家不要在 Opera 中使用它们。
+      跨浏览器确定一个窗口的大小不是一件简单的事。
+      IE9+、Firefox、Safari、Opera 和 Chrome 均为此提供了 4 个属性：innerWidth、innerHeight、outerWidth 和 outerHeight。
+     在 IE9+、Safari 和 Firefox中，outerWidth 和 outerHeight 返回浏览器窗口本身的尺寸（无论是从最外层的 window 对象还是从某个框架访问）。
+     在 Opera中，这两个属性的值表示页面视图容器①的大小。而 innerWidth 和 innerHeight则表示该容器中页面视图区的大小（减去边框宽度）。
+     在 Chrome 中，outerWidth、outerHeight 与innerWidth、innerHeight 返回相同的值，即视口（viewport）大小而非浏览器窗口大小。
+     IE8 及更早版本没有提供取得当前浏览器窗口尺寸的属性；不过，它通过 DOM 提供了页面可见区域的相关信息。
+     在 IE、Firefox、Safari、Opera 和 Chrome 中，
+     document.documentElement.clientWidth 和document.documentElement.clientHeight 中保存了页面视口的信息。
+     使用 resizeTo()和 resizeBy()方法可以调整浏览器窗口的大小。
+     使用 window.open()方法既可以导航到一个特定的 URL，也可以打开一个新的浏览器窗口。
+     通过设置超时值和间歇时间值来调度代码在特定的时刻执行。前者是在指定的时间过后执行代码，而后者则是每隔指定的时间就执行一次代码。
+     浏览器通过 alert()、confirm()和 prompt()方法可以调用系统对话框向用户显示消息。
+ 8.2 location 对象
+     
+ 
+ 
+ 
 
