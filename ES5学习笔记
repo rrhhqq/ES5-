@@ -210,6 +210,20 @@
       电子欺骗，就是指浏览器通过在自己的用户代理字符串加入一些错误或误导性信息，来达到欺骗服务器的目的。
    
  第十章 DOM
-      每个节点都有一个 nodeType 属性，用于表明节点的类型。
-     
-
+ 
+      每个节点都有一个 nodeType 属性，用于表明节点的类型。总共有 12 种节点类型，这些类型都继承自一个基类型。
+      JavaScript 中的所有节点类型都继承自 Node 类型。
+      为了确保跨浏览器兼容，最好还是将 nodeType 属性与数字值进行比较。
+      每个节点都有一个 childNodes 属性，其中保存着一个 NodeList 对象。
+      NodeList 对象的独特之处在于，它实际上是基于 DOM 结构动态执行查询的结果，因此 DOM 结构的变化能够自动反映在NodeList 对象中。
+      访问保存在 NodeList 中的节点——可以通过方括号，也可以使用 item()方法。
+      对 arguments 对象使用 Array.prototype.slice() 方法可以将其转换为数组。而采用同样的方法，也可以将 NodeList 对象转换为数组。
+      IE8 及更早版本将 NodeList实现为一个 COM 对象。要想在 IE 中将 NodeList 转换为数组，必须手动枚举所有成员。
+      每个节点都有一个 parentNode 属性，该属性指向文档树中的父节点。
+      通过使用列表中每个节点的 previousSibling和 nextSibling 属性，可以访问同一列表中的其他节点。
+      hasChildNodes() 也是一个非常有用的方法，这个方法在节点包含一或多个子节点的情况下返回 true ；应该说，这是比查询 childNodes
+      列表的 length 属性更简单的方法。
+      所有节点都有的最后一个属性是 ownerDocument ，该属性指向表示整个文档的文档节点。
+      最常用的方法是appendChild() ，用于向 childNodes 列表的末尾添加一个节点。
+      把节点放在 childNodes 列表中某个特定的位置上，而不是放在末尾，那么可以使用insertBefore() 方法。
+      replaceChild() 方法接受的两个参数是：要插入的节点和要替换的节点。
